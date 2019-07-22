@@ -1,0 +1,42 @@
+body{
+	background: url(../img/login-background.jpg) no-repeat center fixed;
+	background-size: 100% 100% ;
+}
+.signinpanel{
+	width: 750px;
+	height: 400px;
+	margin: 10% auto 0;
+}
+.row{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.col-sm-7,
+.col-sm-5,
+strong{
+	font-size: 14px;
+	color: #fff;
+}
+.m-r-xs{
+	margin-right: 5px;
+}
+span{
+	padding:4px 5px 4px 0;
+}
+font{
+	margin-top: 10px;
+	color: #fff;
+}
+li{
+	list-style: none;
+}
+li a{
+	color: #337AB7;
+}
+
+.signupForm{
+	color: rgba(255,255,255,0.95);
+	background: rgba(255,255,255,0.2);
+	padding: 30px;
+	height: 350px;
+}

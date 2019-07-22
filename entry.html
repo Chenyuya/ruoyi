@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>登录若依系统</title>
+		<link rel="stylesheet" href="css/entry.css"/>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+	</head>
+	<body>
+		<div class="signinpanel">
+			<div class="row" style="border-bottom:solid  #DCDCDC 1px; padding-bottom: 20px;">
+				<div class="col-sm-7">
+					<div class="signin-info">
+						<div class="logopanel m-b">
+							<h1>
+								<img alt="[若依]" src="img/ruoyi.png" >
+							</h1>
+						</div>
+						<div class="m-b"></div>
+						<h4 style="font-size: 14px;">
+							欢迎使用
+							<strong>若依 后台管理系统</strong>
+						</h4>
+						<li><span class="glyphicon glyphicon-circle-arrow-right"></span> SpringBoot</li>
+						<li><span class="glyphicon glyphicon-circle-arrow-right"></span> Mybatis</li></li>
+						<li><span class="glyphicon glyphicon-circle-arrow-right"></span> Shiro</li></li>
+						<li><span class="glyphicon glyphicon-circle-arrow-right"></span> Thymeleaf</li></li>
+						<li><span class="glyphicon glyphicon-circle-arrow-right"></span> Bootstrap</li></li>
+						<li style="margin-top: 16px;">还没有账号？ <a href="#">立即注册》</a></li>
+					</div>
+				</div>
+				<div class="col-sm-5">
+					<div class="signupForm">
+						<h4 class="no-margins" style="font-size: 14px;">登录：</h4>
+						<p class="m-t-md" style="padding: 10px 0;">你若不离不弃，我必生死相依</p>
+						<input type="text" name="username" class="form-control uname valid" style="background-color:
+						 rgb(232, 240, 254);"placeholder="用户名" value="admin" />
+						<input type="password" name="password" class="form-control pword" style="background-color:
+						 rgb(232, 240, 254);margin: 15px 0;"placeholder="密码" value="admin123" />
+						<div class="row m-t">
+							<div class="col-xs-6">
+								<input type="text" name="validatacode" class="form-control code" 
+								placeholder="验证码"maxlength="5" autocomplete="off"/>
+							</div>
+							<div class="col-xs-6">
+								<a href="#" title="点击更换验证码">
+									<img src="img/captchaImage.jpg" style="width: 85%;">
+								</a>
+							</div>
+						</div>
+						<div class="checkbox-custom" style="margin: 10px 0 0 0;">
+							<input type="checkbox" name="rememberme" id="rememberme"/>
+							<label for="rememberme" style="line-height: 10px;">记住我</label>
+						</div>
+						<a href="#"><button class="btn btn-success btn-block" id="btnsubmit" 
+						style="margin-top: 8px; background: #1c84c6;">登录</button></a>
+					</div>
+				</div>
+				<hr >
+			</div>
+			<div class="signup-footer">
+				<div class="pull-left" style="margin-top: 10px;">	
+					<font>© 2019 All Rights Reserved. RuoYi</font> 
+					<br>
+				</div>
+			</div>
+		</div>
+		<script src="jquery/jquery-1.12.4.js" ></script>
+		<script src="bootstrap/js/bootstrap.min.js" ></script>
+	</body>
+</html>

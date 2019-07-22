@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>若依系统首页</title>
+		<link rel="stylesheet" href="favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="layui-v2.5.4/layui/css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+	</head>
+	<body class="layui-layout-body">
+		<script src="layui-v2.5.4/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<div class="layui-layout layui-layout-admin">
+			<div class="layui-header">
+				<div class="layui-logo">RuoYi</div>
+				<!-- 头部区域（可配合layui已有的水平导航） -->
+				<ul class="layui-nav layui-layout-zhong">
+					<li class="layui-nav-item"><a href=""><i class="glyphicon glyphicon-menu-hamburger"> </i></a></li>	
+				</ul>
+				<ul class="layui-nav layui-layout-left">
+					<li class="layui-nav-item"><a href=""><i class="glyphicon glyphicon-facetime-video" style="margin: 0 3px;"></i>
+						视频教程</a></li>
+					<li class="layui-nav-item"><a href=""><i class="glyphicon glyphicon-question-sign" style="margin: 0 3px;"></i>
+						开发文档</a></li>
+					<li class="layui-nav-item"><a href=""><i class="glyphicon glyphicon-fullscreen" style="margin: 0 3px;"> </i>
+						全屏显示</a></li>	
+				</ul>
+				<a class="navbar-minimalize minimalize-styl-2" href="#" style="color: #fff;"></a>
+				<ul class="layui-nav layui-layout-right">
+					<li class="layui-nav-item">
+						<a href="javascript:;">
+							<img src="img/profile.jpg" class="layui-nav-img">
+							若依
+						</a>
+						<dl class="layui-nav-child">
+							<dd><a href="" style="margin: 2px 0;"><i class="glyphicon glyphicon-user" style="margin: 0 10px;"></i>个人中心</a></dd>
+							<dd><a href="" style="margin: 2px 0;"><i class="glyphicon glyphicon-wrench" style="margin: 0 10px;"></i>修改密码</a></dd>
+							<hr >
+							<dd><a href=""><i class="glyphicon glyphicon-log-out text-danger" style="margin: 0 10px; color: #000;"></i>退出登录</a></dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+
+			<div class="layui-side layui-bg-black">
+				<div class="layui-side-scroll">
+					<!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+					<ul class="layui-nav layui-nav-tree" lay-filter="test">
+						<div class="user-panel">
+							<a class="menuItem" title="个人中心" href="#">
+								<div class="hide">个人中心</div>
+								<div class="pull-left image">
+									<img src="img/profile.jpg" class="img-circle" alt="UserImage">
+								</div>
+							</a>
+							<div class="pull-left info">
+								<p>admin</p>
+								<a href="">
+									<div class="fa text-success"></div>
+									<font>在线</font>
+								</a>
+								<a href="">
+									<div class="fa fa-sign-out glyphicon glyphicon-log-out text-danger"></div>
+									<font>注销</font>
+								</a>
+							</div>
+						</div>
+						<li class="layui-nav-item layui-nav-itemed">
+							<a class="#" href="javascript:;" style="text-decoration: none;">
+								<i class="layui-icon" style="margin: 0 3px;">&#xe68e </i>主页
+							</a>
+							<dl class="layui-nav-child">
+								<dd><a href="javascript:;" style="text-indent: 30px;">了解若依</a></dd>
+							</dl>
+						</li>
+						<li class="layui-nav-item layui-nav-itemed">
+							<a href="javascript:;">
+								<i class="layui-icon" style="margin: 0 3px;">&#xe716 </i>系统管理
+							</a>
+							<dl class="layui-nav-child">
+								<dd><a href="javascript:;" style="text-indent: 30px;">用户管理</a></dd>
+								<dd><a href="javascript:;" style="text-indent: 30px;">角色管理</a></dd>
+								<dd><a href="javascript:;" style="text-indent: 30px;">菜单管理</a></dd>
+								<dd><a href="javascript:;" style="text-indent: 30px;">部门管理</a></dd>
+								<dd><a href="javascript:;" style="text-indent: 30px;">岗位管理</a></dd>
+								<dd><a href="javascript:;" style="text-indent: 30px;">字典管理</a></dd>
+								<dd><a href="javascript:;" style="text-indent: 30px;">参数设置</a></dd>
+								<dd><a href="javascript:;" style="text-indent: 30px;">通知公告</a></dd>
+								<li class="layui-nav-item layui-nav-itemed">
+									<a href="javascript:;"style="text-indent: 30px;">日志管理</a>
+									<dl class="layui-nav-child">
+									  <dd><a href="javascript:;"style="text-indent: 30px;">操作日志</a></dd>
+									  <dd><a href="javascript:;"style="text-indent: 30px;">登录日志</a></dd>
+									</dl>
+								</li>
+							</dl>
+						</li>
+						<li class="layui-nav-item">
+							<a href="javascript:;">
+								<i class="glyphicon glyphicon-facetime-video" style="margin: 0 6px 0 4px;"></i>系统监控
+							</a>
+							<dl class="layui-nav-child">
+								<dd><a href="javascript:;" style="text-indent: 30px;">在线用户</a></dd>
+								<dd><a href="javascript:;" style="text-indent: 30px;">定时任务</a></dd>
+								<dd><a href="javascript:;" style="text-indent: 30px;">数据监控</a></dd>
+								<dd><a href="javascript:;" style="text-indent: 30px;">服务监控</a></dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="layui-body">
+				<!-- 内容主体区域 -->
+				<div class="layui-tab" lay-allowClose="true">
+				  <ul class="layui-tab-title">
+					<li class="layui-this" style="margins: -10px 0;">首页</li>
+					<li>用户管理</li>
+					<li>角色管理</li>
+					<li>菜单管理</li>
+					<li>部门管理</li>
+				  </ul>
+				  <div class="layui-tab-content">
+					<div class="layui-tab-item layui-show">1</div>
+					<div class="layui-tab-item">2</div>
+					<div class="layui-tab-item">3</div>
+					<div class="layui-tab-item">4</div>
+					<div class="layui-tab-item">5</div>
+					<div class="layui-tab-item">6</div>
+				  </div>
+				</div>
+			</div>	
+			<div class="layui-footer">
+				<!-- 底部固定区域 -->
+				© layui.com - 底部固定区域
+			</div>
+		<script src="../src/layui.js"></script>
+		<script>
+			//JavaScript代码区域
+			layui.use('element', function() {
+				var element = layui.element;
+			});
+		</script>
+	</body>
+</html>
